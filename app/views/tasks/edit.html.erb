@@ -1,0 +1,14 @@
+
+<%= form_for @task, url: {action: "update"} do |f| %>
+
+  <%= label_tag(:title, "Edit title") %>
+  <%= f.text_field :title %>
+
+  <%= label_tag(:details, "Edit details") %>
+  <%= f.text_field :details %>
+
+  <%= label_tag(:completed, "Completed?") %>
+  <%= f.check_box :completed %>
+
+  <%= f.submit "Update" %>
+<% end %>

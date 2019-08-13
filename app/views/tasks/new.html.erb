@@ -1,0 +1,11 @@
+
+<%= form_for @task, url: {action: "create"} do |f| %>
+
+  <%= label_tag(:title, "Enter title") %>
+  <%= f.text_field :title %>
+
+  <%= label_tag(:details, "Enter details") %>
+  <%= f.text_field :details %>
+
+  <%= f.submit "Create" %>
+<% end %>
